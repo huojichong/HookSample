@@ -15,9 +15,10 @@ class GApplication : Application() {
         // init bytehook
         val r = ByteHook.init(
             ConfigBuilder()
-                .setMode(ByteHook.Mode.AUTOMATIC) //                .setMode(ByteHook.Mode.MANUAL)
+                .setMode(ByteHook.Mode.AUTOMATIC)
+                //.setMode(ByteHook.Mode.MANUAL)
                 .setDebug(true)
-                .setRecordable(true)
+                .setRecordable(false)
                 .build()
         )
         Log.i(TAG, "bytehook init, return: $r")

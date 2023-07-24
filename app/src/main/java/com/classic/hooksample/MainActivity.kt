@@ -39,6 +39,7 @@ class MainActivity : AppCompatActivity() {
      * which is packaged with this application.
      */
     external fun stringFromJNI(): String
+    external fun nativeCallFunc()
 
 //    companion object {
 //        // Used to load the 'hooksample' library on application startup.
